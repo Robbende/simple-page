@@ -23,3 +23,10 @@ class DataAccess():
             result.append(dict(zip(column_names, row)))
         db.close()
         return result
+    
+    def execute_query(self, query):
+        db = MySQLdb.connect(self.server, self.user, self.password, self.database)
+        cursor = db.cursor()
+        cursor.execute(query)
+        db.commit()
+        db.close()
