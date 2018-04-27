@@ -1,5 +1,5 @@
 
-.container {
+.cont-border {
     border: 1px solid rgba(203, 197, 197, 0.65);
     border-radius: 5px;
     margin-top: 10px;
@@ -45,4 +45,10 @@
     text-align: center;
     background-color: rgba(128,128,128,0.28);
     color: #4f6cff;
+}
+
+.prod-box {
+    height: 150px;
+    border: 1px solid grey;
+    margin: 5px 5px 5px 5px; 
 }

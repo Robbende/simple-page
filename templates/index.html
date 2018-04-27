@@ -16,12 +16,12 @@
             <script type="text/javascript" src="/assets/bootstrap/js/bootstrap.min.js"></script>
 
             <!-- global site style -->
-            <link rel="stylesheet" href="/css/site.css?v1.1">
+            <link rel="stylesheet" href="/css/site.css?v2.5">
 
 
         </head>
         <body>
-            <div class="container col-xl-10 col-xl-offset-1">
+            <div class="container cont-border col-xl-10 col-xl-offset-1">
                 <div>
                     <header>
                         <div class="header-tit-cont">
@@ -38,16 +38,18 @@
                     </header>
                     <section>
                         <div id="content">
-                            <h3>body content</h3>
-                            
-                            <ul>
-                                {% for item in products %}
-                                <li>
-                                    {{ item.Name }} - ${{ item.Price }}
-                                </li>
-                                {% endfor %}
-                            </ul>
-                                
+                            <h3>Product Content</h3>
+
+                            <div class="container col-xl-10 col-xl-offset-1">
+                                <div class="row">
+                                    {% for item in products %}
+                                        <div class="col-xl-2 prod-box">
+                                            <span> {{ item.Name }} </span>
+                                            <span> {{ item.Price }} </span>
+                                        </div>
+                                    {% endfor %}
+                                </div>
+                            </div>
 
                         </div>
                     </section>
