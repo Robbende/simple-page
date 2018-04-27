@@ -1,0 +1,48 @@
+
+.container {
+    border: 1px solid rgba(203, 197, 197, 0.65);
+    border-radius: 5px;
+    margin-top: 10px;
+    padding: 0px;
+}
+
+.header-tit-cont {
+    background-color: rgba(0, 43, 255, 0.69);
+    color: white;
+    padding: 0px 10px 0px 10px;
+    height: 80px;
+}
+
+.header-tit-cont h1 {
+    margin: 0px;
+}
+
+.div-nav-cont {
+    background-color: rgba(128,128,128,0.28);
+}
+
+.div-nav-cont a {
+    color: black;
+}
+
+#content {
+    margin: 10px;
+    min-height: 500px;
+}
+
+.nav-link:hover {
+    text-decoration: none;
+    background-color: darkgrey;
+    border-bottom: yellow;
+    border-bottom-style: solid;
+}
+
+.nav {
+    height: 45px;
+}
+
+.footer-stl {
+    text-align: center;
+    background-color: rgba(128,128,128,0.28);
+    color: #4f6cff;
+}

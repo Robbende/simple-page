@@ -1,0 +1,8 @@
+{
+    "db":{
+        "server": "localhost",
+        "user": "root",
+        "password": "admintest",
+        "database":"products"
+    }
+}
