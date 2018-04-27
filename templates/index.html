@@ -39,6 +39,16 @@
                     <section>
                         <div id="content">
                             <h3>body content</h3>
+                            
+                            <ul>
+                                {% for item in products %}
+                                <li>
+                                    {{ item.Name }} - ${{ item.Price }}
+                                </li>
+                                {% endfor %}
+                            </ul>
+                                
+
                         </div>
                     </section>
                     <footer class="footer-stl">

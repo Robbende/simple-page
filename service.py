@@ -9,12 +9,7 @@ product_api = Blueprint('product_api', __name__)
 
 @product_api.route('/product/get')
 def getProducts():
-    conf = ut.getConfig()
-    da = DataAccess(conf)
-
-    query = "select * from products"
-    result = da.select_row(query)
-    # print type(json.dumps(result))
+    result = get_products()
     return json.dumps(result)
 
 @product_api.route('/product/create', methods=['POST'])
@@ -38,3 +33,12 @@ def createProduct():
         p_obj = dict(success=False, error=str(ex))
 
     return json.dumps(p_obj)
+
+
+def get_products():
+    conf = ut.getConfig()
+    da = DataAccess(conf)
+
+    query = "select * from products"
+    result = da.select_row(query)
+    return result

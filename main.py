@@ -1,5 +1,5 @@
 from flask import Flask, render_template, request
-from service import product_api
+from service import *
 from dataaccess import DataAccess
 import json
 
@@ -11,7 +11,8 @@ app.register_blueprint(product_api, url_prefix="/api")
 
 @app.route('/')
 def main():
-    return render_template('index.html')
+    prod_res = get_products()
+    return render_template('index.html', products=prod_res)
 
 
 if __name__ == '__main__':
